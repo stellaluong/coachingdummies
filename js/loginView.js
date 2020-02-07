@@ -1,5 +1,6 @@
 function showLogin() {
     document.getElementById('content').innerHTML = `
+    <div class="main" </div>
     <div class="container" id="container">
     <label for="uname"><b>Username</b></label>
     <input id="uname" type="text" placeholder="Enter Username" name="uname" required>

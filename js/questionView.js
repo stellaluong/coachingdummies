@@ -7,7 +7,8 @@ function showQuestion() {
 
     const disabledOrNot = model.question.moodRating === 0 ? 'disabled' : '';
 
-    questionDiv.innerHTML = ` <br>
+    questionDiv.innerHTML = ` <div class="main" </div>
+	<br>
 		<div class="col-md-3"></div>
 		<div class="col-md-6 well">
 		<div>
