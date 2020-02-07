@@ -1,7 +1,8 @@
 let tasksTable = document.getElementById("content");
 
-function showAdmin() {
+function showUsers() {
     let html = `<div class="main" </div>
+                        <div class="main" </div>
                         <table>
                         <tr> <th>Navn</th>
                               <th>comment</th>
@@ -43,18 +44,18 @@ function createHtmlRow(i) {
 
 function changeIsDone(checkbox, index) {
     task[index].isDone = checkbox.checked;
-    task[index].dato = new Date().toISOString().substr(0, 10);
-    showAdmin();
+    showMembersx].dato = new Date().toISOString().substr(0, 10);
+showUsers();
 }
 
 function deleteTask(index) {
     task.splice(index, 1);
-    showAdmin();
+    showUsers();
 }
 
 function editTask(index) {
     task[index].editMode = true;
-    showAdmin();
+    showUsers();
 }
 
 function updateTask(index) {
@@ -65,7 +66,7 @@ function updateTask(index) {
     task.name = inputTag.value;
     tasl.comment = inputTag.value;
     task.editMode = false;
-    showAdmin();
+    showUsers();
 }
 
 function add(inputTag) {

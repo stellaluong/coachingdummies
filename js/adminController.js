@@ -13,5 +13,5 @@ function addTask() {
     taskname.value = '';
     taskFrist.value = '';
     taskdato.value = '';
-    sh();
+    showUsers();
 }

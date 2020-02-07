@@ -4,13 +4,13 @@ function showMenu() {
     <div class="sidebar">
     <a href="#dashboard"><i class="fa fa-align-justify"></i> DASHBOARD</a>
       <a href="#admin"><i class="fa fa-fw fa-user"></i> ADMIN</a>
-      <a href="#users"><i class="fas fa-address-book"></i> USERS</a>
+      <a href="javascript:showUsers()"><i class="fas fa-address-book"></i> USERS</a>
       <a href="javascript:showQuestion()"><i class="fa fa-fw fa-envelope"></i> Forms</a>
     </div>;
     Meny:
     <div class="main" </div>
     <a href="javascript:showLogin()" > Login </a> 
-    <a href="javascript:showAdmin()" > Admin </a> 
+    <a href="javascript:showMembers()" > Admin </a> 
     <a href="javascript:showQuestion()" > Spørsmål </a>    
     `;
 }
