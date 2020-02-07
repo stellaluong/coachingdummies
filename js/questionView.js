@@ -1,9 +1,9 @@
 var questionDiv = document.getElementById('content');
 
-function questionShow() {
+function showQuestion() {
     const currentAnswers = getCurrentAnswers();
     const currentQuestionIndex = !currentAnswers ? 0 : currentAnswers.length;
-    const currentQuestion = model.question.ratingMap.questions[currentQuestionIndex];
+    const currentQuestion = model.question.questions[currentQuestionIndex];
 
     const disabledOrNot = model.question.moodRating === 0 ? 'disabled' : '';
 
@@ -18,7 +18,7 @@ function questionShow() {
 						style="color:${model.question.moodRating == n ? 'orange' : 'black'};
 							   font-size:40px;
 							   cursor:pointer;" 
-						class="far fa-${model.question.ratingMap.ratingOptions[n]}"/>`
+						class="far fa-${model.question.ratingOptions[n]}"/>`
 				).join('')}
 			</fieldset>
 		</div>

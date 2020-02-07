@@ -26,10 +26,8 @@ const model = {
         moodRating: 0,
         questionStart: 0,
         questionNextNumber: 0,
-        ratingMap: {
-            ratingOptions: ['', 'angry', 'frown', 'meh', 'smile', 'laugh'],
-            questions: ['How Was Your Mood today?', 'How was your Meal?', 'Did you like these questions?', 'Feel empty?', 'Do you like milk?', ],
-            answers: [],
+        ratingOptions: ['', 'angry', 'frown', 'meh', 'smile', 'laugh'],
+        questions: ['How Was Your Mood today?', 'How was your Meal?', 'Did you like these questions?', 'Feel empty?', 'Do you like milk?', ],
+        answers: [],
         },
-    },
 };
