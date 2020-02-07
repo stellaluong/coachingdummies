@@ -44,8 +44,8 @@ function createHtmlRow(i) {
 
 function changeIsDone(checkbox, index) {
     task[index].isDone = checkbox.checked;
-    showMembersx].dato = new Date().toISOString().substr(0, 10);
-showUsers();
+    task.dato = new Date().toISOString().substr(0, 10);
+    showUsers();
 }
 
 function deleteTask(index) {
