@@ -10,7 +10,7 @@ function showMenu() {
     Meny:
     <div class="main" </div>
     <a href="javascript:showLogin()" > Login </a> 
-    <a href="javascript:showMembers()" > Admin </a> 
+    <a href="javascript:showUsers()" > Admin </a> 
     <a href="javascript:showQuestion()" > Spørsmål </a>    
     `;
 }
