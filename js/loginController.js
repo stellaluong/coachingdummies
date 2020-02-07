@@ -17,14 +17,14 @@ function checklogin() {
             isAdmin: true
         };
         model.session.loginError = null;
-        UserShow();
+        showAdmin();
         console.log("du er admin!")
     } else {
         model.session.user = {
             name: Username.value,
             isAdmin: false
         };
-        questionShow();
+        showQuestion();
         console.log("du er ikke admin din dust")
     }
 

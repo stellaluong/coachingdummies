@@ -1,6 +1,6 @@
 let tasksTable = document.getElementById("content");
 
-function UserShow() {
+function showAdmin() {
     let html = `<table>
                         <tr> <th>Navn</th>
                               <th>comment</th>
@@ -43,17 +43,17 @@ function createHtmlRow(i) {
 function changeIsDone(checkbox, index) {
     tasks[index].isDone = checkbox.checked;
     tasks[index].dato = new Date().toISOString().substr(0, 10);
-    userShow();
+    showAdmin();
 }
 
 function deleteTask(index) {
     tasks.splice(index, 1);
-    userShow();
+    showAdmin();
 }
 
 function editTask(index) {
     tasks[index].editMode = true;
-    Usershow();
+    showAdmin();
 }
 
 function updateTask(index) {
@@ -66,7 +66,7 @@ function updateTask(index) {
     task.comment = inputTag.value;
     task.editMode = false;
 
-    UserShow();
+    showAdmin();
 
     function add(inputTag) {
         let tasks = {
