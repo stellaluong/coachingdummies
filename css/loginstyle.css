@@ -71,4 +71,32 @@
      .sidebar a {
          font-size: 18px;
      }
- }
+ }table,
+        tr,
+        td,
+        th {
+            border: 1px solid gray;
+            border-collapse: collapse;
+
+        }
+
+
+        td,
+        th {
+            padding: 4px;
+
+        }
+
+        th {
+            background-color: darkblue;
+            border: 1px solid gray;
+            color: whitesmoke;
+        }
+
+        tr:nth-child(even) {
+            background-color:gray;
+            color: white;
+
+
+
+        }
