@@ -41,18 +41,18 @@ function createHtmlRow(i) {
 }
 
 function changeIsDone(checkbox, index) {
-    tasks[index].isDone = checkbox.checked;
-    tasks[index].dato = new Date().toISOString().substr(0, 10);
+    task[index].isDone = checkbox.checked;
+    task[index].dato = new Date().toISOString().substr(0, 10);
     showAdmin();
 }
 
 function deleteTask(index) {
-    tasks.splice(index, 1);
+    task.splice(index, 1);
     showAdmin();
 }
 
 function editTask(index) {
-    tasks[index].editMode = true;
+    task[index].editMode = true;
     showAdmin();
 }
 
@@ -60,21 +60,19 @@ function updateTask(index) {
     const id = `editDescription${index}`;
     const inputTag = document.getElementById(id);
     const task = tasks[index];
-
     task.description = inputTag.value;
     task.name = inputTag.value;
-    task.comment = inputTag.value;
+    tasl.comment = inputTag.value;
     task.editMode = false;
-
     showAdmin();
+}
 
-    function add(inputTag) {
-        let tasks = {
-            name: inputTag.value(),
-            description: inputTag.value(),
-            date: new Date(),
-            frist: new Date()
-        };
-        taskCollection.add(tasks);
-    }
+function add(inputTag) {
+    let tasks = {
+        name: inputTag.value(),
+        description: inputTag.value(),
+        date: new Date(),
+        frist: new Date()
+    };
+    taskCollection.add(tasks);
 }

@@ -3,7 +3,7 @@ function clickRating(value) {
     showQuestion();
 }
 
-function next(submit) {
+function next() {
     const answers = getCurrentAnswers();
     answers.push({ rating: model.question.moodRating, comment: 'no comment' });
     model.question.moodRating = 0;

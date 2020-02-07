@@ -11,6 +11,7 @@ function showQuestion() {
 		<div class="col-md-3"></div>
 		<div class="col-md-6 well">
 		<div>
+			<h4>${currentAnswers.length + 1}/${model.question.questions.length}</h4>
 			<h4>${currentQuestion}:</h4>
 			<br>
 			<fieldset>${ [1,2,3,4,5].map(n=>
