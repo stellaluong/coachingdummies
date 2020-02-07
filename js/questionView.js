@@ -27,7 +27,7 @@ function showQuestion() {
 		<br />
 		<div class="form-group">
 			<h6>Additional comment:</h6>
-			<textarea id="review" class="form-control" 
+			<textarea id="comment" class="form-control" 
 			style="resize:none; width: 300px; height:100px;"></textarea>
 		</div>
 		<button type="submit"  id="nextButton" class="btn btn-success" onclick="next(this)" 
