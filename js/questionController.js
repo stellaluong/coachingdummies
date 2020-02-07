@@ -4,8 +4,9 @@ function clickRating(value) {
 }
 
 function next() {
+    let commentText = document.getElementById("comment").value
     const answers = getCurrentAnswers();
-    answers.push({ rating: model.question.moodRating, comment: 'no comment' });
-    model.question.moodRating = 0;
+    answers.push({ rating: model.question.moodRating, comment: commentText, });
+    console.log(answers)
     showQuestion();
 }
