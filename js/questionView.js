@@ -1,15 +1,16 @@
 var questionDiv = document.getElementById('content');
+var commentDiv = document.getElementById('commentBox');
+
+showQuestion();
+showComment();
 
 function showQuestion() {
-	const currentAnswers = getCurrentAnswers();
-    const currentQuestionIndex = !currentAnswers ? 0 : currentAnswers.length;
-	const currentQuestion = model.question.questions[currentQuestionIndex];
-
-
-    const disabledOrNot = model.question.moodRating === 0 ? 'disabled' : '';
-
+const disabledOrNot = model.question.moodRating === 0 ? 'disabled' : '';
+const currentAnswers = getCurrentAnswers();
+const currentQuestionIndex = !currentAnswers ? 0 : currentAnswers.length;
+const currentQuestion = model.question.questions[currentQuestionIndex];
     questionDiv.innerHTML = ` <div class="main" </div>
-	<br>
+		<br>
 		<div class="col-md-3"></div>
 		<div class="col-md-6 well">
 		<div>
@@ -23,17 +24,23 @@ function showQuestion() {
 							   cursor:pointer;" 
 						class="far fa-${model.question.ratingOptions[n]}"/>`
 				).join('')}
+				<br><br>
+				<button type="submit" id="nextButton" class="btn btn-success" onclick="next(this)" 
+				${disabledOrNot}>Next</button></fieldset>
+		`;
+}
+function showComment() {
+	commentDiv.innerHTML = `
+	<div class="main" </div>
+	<div class="col-md-3"></div>
+		<div class="col-md-6 well">
 		<br>
 		<br />
+		</fieldset>
 		<div class="form-group">
 			<h6>Additional comment:</h6>
 			<textarea id="comment" class="form-control" 
 			style="resize:none; width: 300px; height:100px;"></textarea>
-		</div>
-		</fieldset>
-		</div>
-		</div>
-		<button type="submit"  id="nextButton" class="btn btn-success" onclick="next(this)" 
-		${disabledOrNot}>Next</button> <br />
+		</div></fieldset>
 		`;
-}
+	}
