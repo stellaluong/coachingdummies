@@ -8,6 +8,7 @@ function showUsers() {
                               <th>comment</th>
                               <th>dato</th>
                          </tr>`;
+                         
     for (let i = 0; i < model.admin.tasks.length; i++) {
         html += createHtmlRow(i);
     }
@@ -40,6 +41,8 @@ function createHtmlRow(i) {
                                    </td>
                                 </tr>
                                 `;
+                                
+                                
 }
 
 function changeIsDone(checkbox, index) {

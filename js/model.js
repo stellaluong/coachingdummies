@@ -1,16 +1,60 @@
 const model = {
+    screen: {
+        current: "loginScreen",
+    },
+    
+    registeredUsers: [
+        {   id: 0,
+            firstname: ['test'],
+            lastname: ['terje'],
+            username: ['terjekongen'],
+            password: [''],
+            company: [''],
+            email: [''],
+            genders: "female" || "male",
+            contactno: [''],
+        },
+        {
+            id: 1,
+            firstname: ['test'],
+            lastname: ['geir'],
+            username: ['geirdronning'],
+            password: [''],
+            company: [''],
+            email: [''],
+            genders: "female" || "male",
+            contactno: [''],
+        },
+
+      
+    ],
     session: {
         user: null,
         loginError: null,
         // screen: 'main'
     },
     admin: {
-        tasks: [
-            { name: "a", description: ' ', isDone: true, dato: '2020-01-31' },
-            { name: 'b', comment: "", description: ' ', isDone: true },
-            { name: 'c', description: ' ', isDone: false },
-            { name: 'd', description: ' ', isDone: false },
-        ]
+        //  Uses = [
+        //     {
+        //         modul: "modul1",
+        //         modul1: "1",
+        //         isDone: true,
+        //         names: ["gunnar",
+        //         ]
+        //     },
+        //     {
+        //         modul: "modul2",
+        //         modul2: "2",
+        //         isDone: true,
+        //         names: ["simon"]
+        //     },
+        //     {
+        //         modul: "modul3",
+        //         modul3: "3",
+        //         isDone: true,
+        //         names: ["fillip"]
+        //     },
+        // ]
     },
     answers: {
         week1: [

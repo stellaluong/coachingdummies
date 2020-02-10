@@ -1,4 +1,5 @@
 function showLogin() {
+  if (model.screen.current = 'loginScreen') {
     document.getElementById('content').innerHTML = `
     <div class="main" </div>
     <div class="container" id="container">
@@ -19,6 +20,5 @@ function showLogin() {
 </div>
 
         `;
-
-
+  }
 }

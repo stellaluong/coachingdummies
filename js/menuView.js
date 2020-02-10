@@ -6,6 +6,7 @@ function showMenu() {
       <a href="#admin"><i class="fa fa-fw fa-user"></i> ADMIN</a>
       <a href="javascript:showUsers()"><i class="fas fa-address-book"></i> USERS</a>
       <a href="javascript:showQuestion()"><i class="fa fa-fw fa-envelope"></i> Forms</a>
+      <a href="javascript:showRegister()"><i class="fa fa-fw fa-envelope"></i> Registration</a>
     </div>;
     Meny:
     <div class="main" </div>
@@ -13,4 +14,5 @@ function showMenu() {
     <a href="javascript:showUsers()" > Admin </a> 
     <a href="javascript:showQuestion()" > Spørsmål </a>    
     `;
+    
 }
