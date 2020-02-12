@@ -9,7 +9,7 @@ const model = {
             lastname: ['terje'],
             username: ['terjekongen'],
             password: [''],
-            company: [''],
+            company: ['Celsa Nordic',],
             email: [''],
             genders: "female" || "male",
             contactno: [''],
