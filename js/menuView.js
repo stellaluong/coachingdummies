@@ -14,11 +14,11 @@ function showMenu() {
     </div>
 <div class="w3-bar-block">
     <a href="javascript:showLogin()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-align-justify"></i> LOGIN</a>
-      <a href="#admin" class="w3-bar-item w3-button w3-padding"><i class="fa fa-fw fa-user"></i> ADMIN</a>
-      <a href="javascript:showCustomer()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-address-card"></i> CUSTOMER</a>
-      <a href="javascript:showUsers()" class="w3-bar-item w3-button w3-padding><i class="fas fa-address-book"></i> USERS</a>
-      <a href="javascript:showQuestion()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-fw fa-envelope"></i> Forms</a>
-      <a href="javascript:showRegister()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-fw fa-envelope"></i> Registration</a>
+      <a href="#admin" class="w3-bar-item w3-button w3-padding"><i class="far fa-user"></i> ADMIN</a>
+      <a href="javascript:showCustomer()" class="w3-bar-item w3-button w3-padding"><i class="far fa-address-card"></i> CUSTOMER</a>
+      <a href="javascript:showUsers()" class="w3-bar-item w3-button w3-padding"><i class="far fa-address-card"></i> USERS</a>
+      <a href="javascript:showQuestion()" class="w3-bar-item w3-button w3-padding"><i class="far fa-sticky-note"></i> Forms</a>
+      <a href="javascript:showRegister()" class="w3-bar-item w3-button w3-padding"><i class="far fa-address-book"></i> Registration</a>
 
     </div>
     </div>

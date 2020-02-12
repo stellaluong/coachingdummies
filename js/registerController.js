@@ -7,6 +7,7 @@ let username = document.getElementById('uname').value;
 let password = document.getElementById('password').value;
 let company = document.getElementById('company').value;
 let email = document.getElementById('email').value;
+let birthday = document.getElementById('birthday').value;
 let male = document.getElementById('male').value;
 let female = document.getElementById('female').value;
 let contact = document.getElementById('contact').value;
@@ -24,6 +25,7 @@ model.registeredUsers.push({
     password: password,
     company: company,
     email: email,
+    birthday: birthday,
     genderMale: male,
     genderFemale: female,
     contact: contact,

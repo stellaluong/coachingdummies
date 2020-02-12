@@ -24,7 +24,7 @@ function showQuestion() {
 						class="far fa-${model.question.ratingOptions[n]}"/>`
 				).join('')}
 				<br><br>
-				<button type="submit" id="nextButton" class="btn btn-success" onclick="next(this)" 
+				<button type="submit" id="nextButton" class="w3-button w3-border w3-teal w3-round-large" onclick="next(this)" 
 				${disabledOrNot}>Next</button>
 				<br>
 				<br />

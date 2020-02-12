@@ -25,6 +25,9 @@ function showRegister() {
     <label>Email :</label>
     <input id="email" name="email" placeholder="Valid Email" type="text">
     <br>
+    <label>Birthday :</label>
+    <input id="birthday" type="date" name="bday">
+    <br>
     <label>Gender :</label>
     <input id="male" name="gender" type="radio" value="Male">
     <label>Male</label>
@@ -35,7 +38,7 @@ function showRegister() {
     <input id="contact" name="contact" placeholder="Contact No." type="text">
     <br>
     <br>
-    <button type="submit" id="submitRegister" onclick="submitButton()" class="btn btn-success">Submit</button>
+    <button type="submit" id="submitRegister" onclick="submitButton()" class="w3-button w3-border w3-teal w3-round-large">Submit</button>
     </div>
     </div>
     </div>

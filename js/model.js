@@ -5,14 +5,15 @@ const model = {
     
     registeredUsers: [
         {   id: 0,
-            firstname: ['test'],
-            lastname: ['terje'],
-            username: ['terjekongen'],
-            password: [''],
-            company: ['Celsa Nordic',],
-            email: [''],
-            genders: "female" || "male",
-            contactno: [''],
+            firstname: ['Andreas'],
+            lastname: ['Rigoll'],
+            username: ['123'],
+            password: ['123'],
+            company: ['Celsa Nordic'],
+            birthday: ['11 april 1988'],
+            email: ['Andreas.rigoll@celsanordic.com'],
+            genders: ['male'],
+            contactno: ['0046 732529604'],
         },
         {
             id: 1,
