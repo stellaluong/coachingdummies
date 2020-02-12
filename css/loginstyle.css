@@ -97,6 +97,24 @@
             background-color:gray;
             color: white;
 
-
-
         }
+        input[type=text] {
+            width:100%;
+            height:40px;
+            padding:5px;
+            margin-bottom:15px;
+            margin-top:5px;
+            border:2px solid #ccc;
+            color:#4f4f4f;
+            font-size:16px;
+            border-radius:5px
+            }
+            input[type=radio] {
+            margin:10px 10px 0
+            }
+            label {
+            color:#464646;
+            text-shadow:0 1px 0 #fff;
+            font-size:14px;
+            font-weight:700
+            }

@@ -4,7 +4,7 @@ function showLogin() {
     <div class="main" </div>
     <div class="container" id="container">
     <label for="uname"><b>Username</b></label>
-    <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+    <input id="uname" placeholder="Enter Username" name="uname" required>
     <br>
     <label for="psw"><b>Password</b></label>
     <input id="pass" type="password" placeholder="Enter Password" name="psw" required>
