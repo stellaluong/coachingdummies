@@ -3,9 +3,7 @@ function createChart() {
         //title: { text: "Customer Journey Map"},
         legend: {
             visible: false
-        },
-        dataSource: {
-            data: stats
+        
         },
         series: [{
             type: "area",
@@ -51,3 +49,10 @@ function refresh()
 
     chart.refresh();
 }
+function pastlog(){
+    const output = document.getElementById('output');
+  // model.datavar.data = note to selv - denne stien er modell stilen 
+    `<div> blablalblalblablblablabllablllbablballlala</div>`;
+    
+    showCustomer();
+console.log ("blablablabla", output); }
