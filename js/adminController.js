@@ -1,17 +1,16 @@
 // Controller
-var taskDescriptionInput = document.getElementById('taskDescription');
+function AddUses() {
+    Uses.push({
 
-function addTask() {
-    tasks.push({
-        description: taskDescriptionInput.value,
-        name: taskname.value,
-        frist: taskFrist.value,
-        dato: taskdato.value,
+        modul1: Usesmodul1.value,
+        modul2: Usesmodul2.value,
+        modul3: Usesmodul3.value,
         isDone: false
     });
-    taskDescriptionInput.value = '';
-    taskname.value = '';
-    taskFrist.value = '';
-    taskdato.value = '';
-    showUsers();
+
+    Usesmodul1.value = '';
+    Usesmodul2.value = '';
+    Usesmodul3.value = '';
+
+    adminControllerShow();
 }

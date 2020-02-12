@@ -1,7 +1,7 @@
 function showLogin() {
   if (model.screen.current = 'loginScreen') {
     document.getElementById('content').innerHTML = `
-    <div class="main" </div>
+    <div class="w3-main">
     <div class="container" id="container">
     <label for="uname"><b>Username</b></label>
     <input id="uname" placeholder="Enter Username" name="uname" required>

@@ -3,7 +3,7 @@ function showCustomer(){
 
     if (model.screen.current = 'customerScreen') {
         document.getElementById('content').innerHTML = `
-
+        <div class="w3-main">
 <div id="explanation-table">
         <table width="100%" border="0">
             <table>

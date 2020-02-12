@@ -3,7 +3,7 @@ registerForm = document.getElementById('content');
 function showRegister() {
     if (model.screen.current = 'registerScreen') {
     registerForm.innerHTML = `
-    <div class="main">
+    <div class="w3-main">
     <div class="col-md-3"></div>
     <div class="col-md-6 well">
     <h2>Registration</h2>
@@ -39,6 +39,7 @@ function showRegister() {
     </div>
     </div>
     </div>
+    
     ` ;
     }
     else {commentInput = ''}

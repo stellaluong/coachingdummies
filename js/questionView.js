@@ -7,7 +7,8 @@ function showQuestion() {
 	const currentQuestionIndex = !currentAnswers ? 0 : currentAnswers.length;
 	const currentQuestion = model.question.questions[currentQuestionIndex];
 	if (model.screen.current = 'questionScreen') {
-    questionDiv.innerHTML = ` <div class="main" </div>
+	questionDiv.innerHTML = ` 
+	<div class="w3-main">
 		<br>
 		<div class="col-md-3"></div>
 		<div class="col-md-6 well">
@@ -32,6 +33,7 @@ function showQuestion() {
 				<br>
 				<br />
 				</fieldset>
+				<div class="w3-main">
 				<div class="form-group">
 				<h6>Additional comment:</h6>
 				<textarea id="comment" class="form-control" 
