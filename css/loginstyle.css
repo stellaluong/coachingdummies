@@ -1,3 +1,8 @@
+
+
+html,body,h1,h2,h3,h4,h5 {
+    font-family: "Raleway", sans-serif
+}
  .btn {
      background-color: #4CAF50;
      size: 900px;
@@ -118,3 +123,67 @@
             font-size:14px;
             font-weight:700
             }
+
+            @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+            @import url(https://fonts.googleapis.com/css?family=Roboto-Slab:400,500,700,300,100);
+            h1 {
+                text-align: center;
+                color: #454545;
+                font-family: Roboto, helvetica, arial, sans-serif;
+            }
+            
+            #sub {
+                text-align: center;
+            }
+            
+            #explanation-table {
+                padding-right: 45px;
+                padding-left: 45px;
+            }
+            
+            body {
+                font-family: "Roboto", helvetica, arial, sans-serif;
+                text-rendering: optimizeLegibility;
+            }
+            
+            .table-title h3 {
+                color: black;
+                font-style: normal;
+                font-family: "Roboto", helvetica, arial, sans-serif;
+                text-transform: uppercase;
+            }
+            
+            
+            /*** Table Styles **/
+            
+            .table-fill {
+                background: white;
+                border-collapse: collapse;
+                padding: 5px;
+                width: 100%;
+            }
+            
+            tr:nth-child(odd) td {
+                text-align: center;
+            }
+            
+            td {
+                text-align: left;
+                vertical-align: middle;
+            }
+            
+            table {
+                border-collapse: collapse;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                table-layout: fixed;
+            }
+            
+            th {
+                padding: 16px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            
+           
