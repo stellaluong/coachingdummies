@@ -1,5 +1,6 @@
 function showMenu() {
     document.getElementById('header').innerHTML = `
+    
     <nav class="w3-sidebar w3-collapse w3-white w3-animate-left w3-top" style="z-index:4; width:200px;" id="mySidebar"><br>
     <div class="w3-container w3-row">
     <div class="w3-col s4">

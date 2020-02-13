@@ -1,3 +1,8 @@
+.w3-main{
+    margin-left:250px;
+    margin-top:10px;
+}
+
 .editor1{
     width: 70%;
     background-color: #fff;
@@ -26,23 +31,8 @@
         {
 			text-decoration:underline;
 		}
-.w3-main{
-    margin-left:250px;
-    margin-top:30px;
-}
-html,body,h1,h2,h3,h4,h5 {
-    font-family: "Raleway", sans-serif
-}
- .btn {
-     background-color: #4CAF50;
-     size: 900px;
-     color: white;
-     padding: 16px;
-     font-size: 16px;
-     border: solid black 1px;
-     cursor: pointer;
- }
- 
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
  body {
      background-repeat: no-repeat;
      background-attachment: fixed;
@@ -92,11 +82,7 @@ html,body,h1,h2,h3,h4,h5 {
  }
  /* Style the main content */
  
- .main {
-     margin-left: 160px;
-     /* Same as the width of the sidenav */
-     padding: 0px 10px;
- }
+
  /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
  
  @media screen and (max-height: 450px) {
