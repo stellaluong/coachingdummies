@@ -14,6 +14,16 @@ const model = {
             email: ['Andreas.rigoll@celsanordic.com'],
             genders: ['male'],
             contactno: ['0046 732529604'],
+            conversationLog: [
+                {
+                    date: '13.01.2020',
+                    text: `hallo`,
+                },
+                {
+                    date: '08.02.2020',
+                    text: `hei`,
+                }
+            ]
         },
         {
             id: 1,

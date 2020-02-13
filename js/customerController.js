@@ -1,3 +1,8 @@
+
+function format(command, value) {
+    document.execCommand(command, false, value);
+}
+
 function createChart() {
     $("#chart").kendoChart({
         //title: { text: "Customer Journey Map"},
@@ -49,10 +54,4 @@ function refresh()
 
     chart.refresh();
 }
-function pastlog(){
-    const output = document.getElementById('output');
-  // model.datavar.data = note to selv - denne stien er modell stilen 
-    `<div> blablalblalblablblablabllablllbablballlala</div>`;
-    
-    showCustomer();
-console.log ("blablablabla", output); }
+
