@@ -22,8 +22,8 @@ function showCustomer() {
                     <div class="w3-third">
                      <div class="w3-white w3-text-grey w3-card-4">
                       <div class="w3-display-container">
-                    <button onclick="pastlogs()" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>Log History</button>
-                    <div id="past">${historyLog}</div>
+                    <button onclick="pastlogs()" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>History Log</button>
+                    
             </div>
             </div>
             </div>
