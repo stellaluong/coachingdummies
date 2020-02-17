@@ -2,10 +2,12 @@ var questionDiv = document.getElementById('content');
 var commentInput = document.getElementById('commentBox');
 
 function showQuestion() {
-	const disabledOrNot = model.question.moodRating === 0 ? 'disabled' : '';
 	const currentAnswers = getCurrentAnswers();
 	const currentQuestionIndex = !currentAnswers ? 0 : currentAnswers.length;
 	const currentQuestion = model.question.questions[currentQuestionIndex];
+	console.log(model.question.questions.length, currentQuestionIndex);
+	const lastQuestion = model.question.questions.length <= currentQuestionIndex + 1;
+	const disabledOrNot = model.question.moodRating === 0 ? 'disabled' : lastQuestion ? 'disabled' :  '';
 	if (model.screen.current = 'questionScreen') {
 	questionDiv.innerHTML = ` 
 	<div class="w3-main">
@@ -24,17 +26,25 @@ function showQuestion() {
 						class="far fa-${model.question.ratingOptions[n]}"/>`
 				).join('')}
 				<br><br>
-				<button type="submit" id="nextButton" class="w3-button w3-border w3-teal w3-round-large" onclick="next(this)" 
-				${disabledOrNot}>Next</button>
-				<br>
-				<br />
 				<div class="form-group">
 				<h6>Additional comment:</h6>
 				<textarea id="comment" class="form-control" 
 				style="resize:none; width: 300px; height:100px;"></textarea>
 				</div>
+				<button type="submit" id="nextButton" class="w3-button w3-border w3-teal w3-round-large" onclick="next(this)" style="display:${lastQuestion ? "none" : "block"}"
+				${disabledOrNot}>Next</button>
+				<button type="submit" class="w3-button w3-border w3-teal w3-round-large" onclick="showSubmit()" style="display:${lastQuestion ? "block" : "none"}"> Submit</button>
 				`;
 			}
-		console.log(model.screen.current)
 		}
+			function showSubmit() {
+				questionDiv.innerHTML = `
+				<div class="w3-main">
+				<br>
+				<h1> You have submitted your form, Thank You!</h1>
+				`; 
+				console.log()
+			}
+			
+		
 	

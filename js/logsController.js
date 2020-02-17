@@ -26,10 +26,6 @@ function newConversationLog(){
 }
 function pastlogs() {
 
-    historyLog = `
-    <h1>History</h1>
-
- `;
  for(log of model.registeredUsers[0].conversationLog) {
     historyLog += log.date + ' ' + log.text + '<br>'
  }

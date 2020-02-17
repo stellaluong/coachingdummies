@@ -1,6 +1,6 @@
-function showConversationLogPage() {
-    const latestLog = getLatestConversationLog();
-    document.getElementById('content').innerHTML = `
+function pastquestionlogs() {
+
+    document.getElementById('content').innerHTML = ` 
     <div class="w3-main"> 
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
     <div class="w3-row-padding">
@@ -19,9 +19,9 @@ function showConversationLogPage() {
         <hr>
             <div class="w3-third">
              <div class="w3-white w3-text-grey w3-card-4">
-             <div class="w3-display-container">
-             <button onclick="pastlogs()" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-history fa-fw"></i> History Log</button>
-             <button onclick="historyQuestions()" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-history fa-fw"></i> Question Log</button>
+              <div class="w3-display-container">
+            <button onclick="pastlogs()" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>History Log</button>
+            <button onclick="historyQuestions()" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-history fa-fw"></i> Question Log</button>
     </div>
     </div>
     </div>
@@ -31,10 +31,9 @@ function showConversationLogPage() {
 <div class="w3-twothird">
 <div class="w3-container w3-card w3-white w3-margin-bottom">
      <div class="w3-container w3-padding">
-     <h2 class="w3-text-grey w3-padding-16">TODAYS LOG</h2>
-     <h6 class="w3-text-teal">Navn: ${model.registeredUsers[0].firstname} ${model.registeredUsers[0].lastname}<br/></h6>
-     <h6 class="w3-text-teal">Dato: ${latestLog.date}<br/><hr></h6>
-       <p oninput="updateLogText(this.value)" class="editor1">${latestLog.text}</p>
+     <h2 class="w3-text-grey w3-padding-16">QUESTION LOGS</h2>
+     <hr>
+     <div id="content">${questionLog}</div>
        </div>
 </div>
 </div>
