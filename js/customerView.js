@@ -11,6 +11,7 @@ function showCustomer() {
                     <div class="w3-display-container">
                     <h4 class="w3-center">${model.registeredUsers[0].firstname} ${model.registeredUsers[0].lastname}</h4>
                     <p class="w3-center"><img src="avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                    <div class="w3-center" oninput="module()">${model.module.module1}</div>
                     <hr>
                     <p class="w3-container w3-margin-bottom"><i class="fas fa-building fa-fw w3-margin-right w3-text-theme"></i>${model.registeredUsers[0].company}</p>
                     <p class="w3-container w3-margin-bottom"><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i>${model.registeredUsers[0].birthday}</p>
@@ -144,5 +145,4 @@ function showCustomer() {
 
         chart.refresh();
     }
-
 }

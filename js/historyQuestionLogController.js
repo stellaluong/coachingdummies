@@ -7,7 +7,7 @@ function historyQuestions() {
      
         questionLog += answers;
     }
-    console.log(pastquestionlogs);
+    console.log(questionLog);
 
     showCustomer();
 }

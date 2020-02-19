@@ -2,7 +2,11 @@ const model = {
     screen: {
         current: "loginScreen",
     },
-    
+    module: {
+        module1: ['Module 1'],
+        module2: ['Module 2'],
+        module3: ['Module 3'],
+    },
     registeredUsers: [
         {   id: 0,
             firstname: ['Andreas'],
@@ -23,7 +27,8 @@ const model = {
                     date: '08.02.2020',
                     text: `hei`,
                 }
-            ]
+            ],
+            module: "Module 1" 
         },
         {
             id: 1,
