@@ -1,4 +1,4 @@
-function sendDocument() {
-model.newDocument.newQuestion.push('juefefe')
-console.log(model.newDocument.newQuestion, '2eesfdf')
-}
+// function sendDocument() {
+// model.newDocument.newQuestion.push('juefefe', 'sadasdsadasds', 'asdasd')
+// console.log(model.newDocument.newQuestion, '2eesfdf')
+// }

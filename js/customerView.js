@@ -52,14 +52,14 @@ function showCustomer() {
             <tr>
             </tr>
             <!--<tr>
-                            <td scope="row" data-label="Account">Visa - 6076</td>
+                            <td scope="row" data-label="Account"></td>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td scope="row" data-label="Account">Corporate AMEX</td>
+                            <td scope="row" data-label="Account"></td>
                             <td></td>
                             <td></td>
                             <td></td>
