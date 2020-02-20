@@ -10,6 +10,7 @@ function showDashboard() {
   <div class="w3-row-padding w3-margin-bottom">
     <div class="w3-quarter">
       <div class="w3-container w3-red w3-padding-16">
+      <a href="javascript:void(0)" onclick="showUserTable()">
         <div class="w3-left"><i class="far fa-address-book w3-xxxlarge"></i></div>
         <div class="w3-clear"></div>
         <h4>Members</h4>
