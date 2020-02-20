@@ -1,3 +1,4 @@
+
 function showMenu() {
     document.getElementById('header').innerHTML = `
     <nav class="w3-sidebar w3-collapse w3-white w3-animate-left w3-top" style="z-index:4; width:200px;" id="mySidebar"><br>
@@ -13,10 +14,10 @@ function showMenu() {
       <h5>Dashboard</h5>
     </div>
 <div class="w3-bar-block">
-    <a href="javascript:showLogin()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-align-justify"></i> LOGIN</a>
-      <a href="#admin" class="w3-bar-item w3-button w3-padding"><i class="far fa-user"></i> ADMIN</a>
+    <a href="javascript:showLogin()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-sign-in-alt"></i> LOGIN</a>
+      <a href="javascript:showDashboard()" class="w3-bar-item w3-button w3-padding"><i class="far fa-user"></i> DASHBOARD</a>
       <a href="javascript:showCustomer()" class="w3-bar-item w3-button w3-padding"><i class="far fa-address-card"></i> CUSTOMER</a>
-      <a href="javascript:showUsers()" class="w3-bar-item w3-button w3-padding"><i class="far fa-address-card"></i> USERS</a>
+      <a href="javascript:showUserTable()" class="w3-bar-item w3-button w3-padding"><i class="far fa-address-card"></i> USERS</a>
       <a href="javascript:showQuestion()" class="w3-bar-item w3-button w3-padding"><i class="far fa-sticky-note"></i> Forms</a>
       <a href="javascript:showRegister()" class="w3-bar-item w3-button w3-padding"><i class="far fa-address-book"></i> Registration</a>
 
