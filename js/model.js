@@ -5,8 +5,8 @@ const model = {
     
     registeredUsers: [
         {   id: 0,
-            firstname: ['Andreas'],
-            lastname: ['Rigoll'],
+            firstname: ['terje'],
+            lastname: ['terjekong'],
             username: ['123'],
             password: ['123'],
             company: ['Celsa Nordic'],
@@ -17,7 +17,7 @@ const model = {
         },
         {
             id: 1,
-            firstname: ['test'],
+            firstname: ['Blu'],
             lastname: ['geir'],
             username: ['geirdronning'],
             password: [''],
