@@ -85,9 +85,13 @@ function showCustomer() {
             legend: {
                 visible: false
             },
+            
             dataSource: {
                 data: [{
-                    value: 30,
+                    value: model.answers.week1[0].rating.toString(),
+                
+                    
+                    
                     order: "uke 1"
                 }, {
                     value: 20,
@@ -102,7 +106,8 @@ function showCustomer() {
                     value: 40,
                     order: "uke 5"
                 }, ]
-            },
+            }, //
+           
             series: [{
                 type: "area",
                 aggregate: "avg",
@@ -122,8 +127,7 @@ function showCustomer() {
                 },
                 visible: true
             }
-
-        });
+        }); console.log  (model.answers.week1[0].rating.toString());
     }
 
     $(document).ready(createChart);
