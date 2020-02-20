@@ -9,7 +9,7 @@ function edit(selectedModule){
 }
 
 function deleteButon(selectedUserId) {
-console.log(model.registeredUsers)
-model.registeredUsers.splice(selectedUserId.id, 1);
+console.log(selectedUserId.id)
+model.registeredUsers.splice(selectedUserId.id)
 showUserTable();
 }

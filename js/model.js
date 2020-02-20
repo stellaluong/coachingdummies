@@ -9,8 +9,8 @@ const model = {
     },
     registeredUsers: [
         {   id: 0,
-            firstname: ['terje'],
-            lastname: ['terjekong'],
+            firstname: ['Andreas'],
+            lastname: ['Rigoll'],
             username: ['123'],
             password: ['123'],
             company: ['Celsa Nordic'],
@@ -65,6 +65,9 @@ const model = {
         week2: [
             { rating: '', comment: '' },
         ],
+    },
+    newDocument: {
+        newQuestion: [''],
     },
     question: {
         count: 0,

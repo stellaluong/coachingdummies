@@ -20,6 +20,7 @@ function showMenu() {
       <a href="javascript:showUserTable()" class="w3-bar-item w3-button w3-padding"><i class="far fa-address-card"></i> USERS</a>
       <a href="javascript:showQuestion()" class="w3-bar-item w3-button w3-padding"><i class="far fa-sticky-note"></i> Forms</a>
       <a href="javascript:showRegister()" class="w3-bar-item w3-button w3-padding"><i class="far fa-address-book"></i> Registration</a>
+      <a href="javascript:showNewDocument()" class="w3-bar-item w3-button w3-padding"><i class="far fa-address-book"></i> New Document</a>
 
     </div>
     </div>
