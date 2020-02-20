@@ -89,15 +89,13 @@ function showCustomer() {
             dataSource: {
                 data: [{
                     value: model.answers.week1[0].rating.toString(),
-                
-                    
                     
                     order: "uke 1"
                 }, {
-                    value: 20,
+                    value: model.answers.week1[1].rating.toString(),
                     order: "uke 2"
                 }, {
-                    value: 40,
+                    value: model.answers.week2[0].rating.toString(),
                     order: "uke 3"
                 }, {
                     value: 15,
