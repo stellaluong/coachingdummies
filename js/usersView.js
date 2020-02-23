@@ -20,7 +20,7 @@ function showUserTable() {
     <td><a href="javascript:showProfile()" id="member">${model.registeredUsers[0].firstname} ${model.registeredUsers[0].lastname}</td>
     <td>${model.registeredUsers[0].company}</td>
     <td>${model.registeredUsers[0].module}
-    <select class="theme-pink" size="1" id="selectModule" oninput="edit(this)">
+    <select class="theme-pink selected" size="1" id="selectModule" oninput="edit(this)">
     <option value="module1"></option>
     <option value="Module 1">Module 1</option>
     <option value="Module 2">Module 2</option>

@@ -16,21 +16,22 @@ function showDashboard() {
         <h4>Members</h4>
       </div>
     </div>
+    
+        <div class="w3-quarter">
+          <div class="w3-container w3-blue w3-padding-16">
+          <a href="javascript:void(0)" onclick="showUsers()">
+            <div class="w3-left"><i class="fas fa-pen-square w3-xxxlarge"></i></div>
+            <div class="w3-clear"></div>
+            <h4>Modules</h4>
+          </div>
+        </div>
 
     <div class="w3-quarter">
-      <div class="w3-container w3-blue w3-padding-16">
+      <div class="w3-container w3-green w3-padding-16">
+      <a href="javascript:void(0)" onclick="showNewDocument()">
         <div class="w3-left"><i class="fas fa-pen-square w3-xxxlarge"></i></div>
         <div class="w3-clear"></div>
         <h4>New Document</h4>
-      </div>
-    </div>
-
-    <div class="w3-quarter">
-      <div class="w3-container w3-blue w3-padding-16">
-      <a href="javascript:void(0)" onclick="showUsers()">
-        <div class="w3-left"><i class="fas fa-pen-square w3-xxxlarge"></i></div>
-        <div class="w3-clear"></div>
-        <h4>Modules</h4>
       </div>
     </div>
     `
@@ -47,7 +48,7 @@ function showUsers() {
     <h3>Module 1</h3><br>
     <i class="fas fa-home w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
     <a href="javascript:void(0)" onclick="showUserTable(event, 'moduleNum');" id="myLink">
-    <div class=" tablink w3-padding-large w3-hover-red">Module 1</div>
+    <div class=" tablink w3-padding-large w3-hover-green">Module 1</div>
     </div>
   </div>
   
@@ -56,7 +57,7 @@ function showUsers() {
     <h3>Module 2</h3><br>
     <i class="fas fa-building w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
     <a href="javascript:void(0)" onclick="showUserTable(event, 'moduleNum');" id="myLink">
-    <div class=" tablink w3-padding-large w3-hover-red">Module 2</div>
+    <div class=" tablink w3-padding-large w3-hover-blue">Module 2</div>
     </div>
   </div>
   
@@ -67,6 +68,12 @@ function showUsers() {
     <a href="javascript:void(0)" onclick="showUserTable(event, 'moduleNum');" id="myLink">
     <div class=" tablink w3-padding-large w3-hover-red">Module 3</div>
     </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
   </div>
   </div>
   </div>

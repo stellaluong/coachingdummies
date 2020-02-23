@@ -2,6 +2,10 @@
     margin-left: 250px;
     margin-top: 10px;
 }
+a {text-decoration: none !important;}
+a:hover {
+  color: gray;
+}
 .theme-pink {
   --radius: 10em;
   --baseFg: #c70062;
@@ -9,7 +13,7 @@
   --accentFg: #c70062;
   --accentBg: #ffaad4;
 }
-select {
+.selected {
   width: 20px;
   height: 20px;
   -webkit-appearance: none;
@@ -26,14 +30,14 @@ select {
   background-size: 0px 100%;
 }
 
-select:hover {
+.selected:hover {
   background-image: linear-gradient(var(--accentFg), var(--accentFg)),
     linear-gradient(-135deg, transparent 50%, var(--accentFg) 50%),
     linear-gradient(-225deg, transparent 50%, var(--accentFg) 50%),
     linear-gradient(var(--accentFg) 42%, var(--accentBg) 42%);
 }
 
-select:active {
+.selected:active {
   background-image: linear-gradient(var(--accentFg), var(--accentFg)),
     linear-gradient(-135deg, transparent 50%, var(--accentFg) 50%),
     linear-gradient(-225deg, transparent 50%, var(--accentFg) 50%),
