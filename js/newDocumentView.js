@@ -21,7 +21,6 @@ if (model.screen.current = 'customerScreen') {
     `
 }
 }
-
 function selectModule(selectedModule) {
   model.registeredUsers.module = selectedModule.value;
 }
