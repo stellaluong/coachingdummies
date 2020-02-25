@@ -2,11 +2,11 @@ const model = {
     screen: {
         current: "loginScreen",
     },
-    module: {
-        module1: ['Module 1'],
-        module2: ['Module 2'],
-        module3: ['Module 3'],
-    },
+    modules: [
+        'Module 1',
+        'Module 2',
+        'Module 3',
+    ],
     registeredUsers: [
         {   id: 0,
             firstname: ['Andreas'],
