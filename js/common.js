@@ -13,3 +13,10 @@ function getCurrentAnswers() {
     }
     return answers;
 }
+function toggleCustomerProfile(userID) {
+    let user = model.registeredUsers[userID];
+    user.showCustomer = true;
+
+    showCustomer()
+    user.showCustomer = false;
+}

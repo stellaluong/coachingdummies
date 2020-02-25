@@ -1,38 +1,37 @@
-function showCustomer() {
-    model.screen.current = "customerScreen";
-    console.log("hei showCustomer kjører!", model.screen.current);
-    if (model.screen.current = 'customerScreen') {
-        document.getElementById('content').innerHTML = `
-        <div class="w3-main"> 
-        <div class="w3-content w3-margin-top" style="max-width:1400px;">
-            <div class="w3-row-padding">
-            <div class="w3-third">
-            <div class="w3-white w3-text-grey w3-card-4">
+function showCustomer(x) {
+    for (user of model.registeredUsers) {
+        if  (user.showCustomer == true) {
+            document.getElementById('content').innerHTML = `
+                <div class="w3-main">
+                <div class="w3-content w3-margin-top" style="max-width:1400px;">
+                <div class="w3-row-padding">
+                <div class="w3-third">
+                <div class="w3-white w3-text-grey w3-card-4">
                     <div class="w3-display-container">
-                    <h4 class="w3-center">${model.registeredUsers[0].firstname} ${model.registeredUsers[0].lastname}</h4>
+                    <h4 class="w3-center">${user.firstname} ${user.lastname}</h4>
                     <p class="w3-center"><img src="avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
-                    <div class="w3-center" oninput="module()">${model.module.module1}</div>
+                    <div class="w3-center" oninput="module()"></div>
                     <hr>
-                    <p class="w3-container w3-margin-bottom"><i class="fas fa-building fa-fw w3-margin-right w3-text-theme"></i>${model.registeredUsers[0].company}</p>
-                    <p class="w3-container w3-margin-bottom"><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i>${model.registeredUsers[0].birthday}</p>
-                    <p class="w3-container w3-margin-bottom"><i class="fas fa-mobile-alt fa-fw w3-margin-right w3-text-theme"></i>${model.registeredUsers[0].contactno}</p>
-                    <p class="w3-container w3-margin-bottom"><i class="fa fa-fw fa-envelope fa-fw w3-margin-right w3-text-theme"></i>${model.registeredUsers[0].email}</p>
+                    <p class="w3-container w3-margin-bottom"><i class="fas fa-building fa-fw w3-margin-right w3-text-theme"></i>${user.company}</p>
+                    <p class="w3-container w3-margin-bottom"><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i>${user.birthday}</p>
+                    <p class="w3-container w3-margin-bottom"><i class="fas fa-mobile-alt fa-fw w3-margin-right w3-text-theme"></i>${user.contactno}</p>
+                    <p class="w3-container w3-margin-bottom"><i class="fa fa-fw fa-envelope fa-fw w3-margin-right w3-text-theme"></i>${user.email}</p>
                     <p class="w3-container w3-margin-bottom"><i class="fas fa-user-friends fa-fw w3-margin-right w3-text-theme"></i> Mentor: Per Eftang</p>
                 </div>
                 <hr>
-                    <div class="w3-third">
-                     <div class="w3-white w3-text-grey w3-card-4">
-                      <div class="w3-display-container">
+                <div class="w3-third">
+                    <div class="w3-white w3-text-grey w3-card-4">
+                    <div class="w3-display-container">
                     <button onclick="pastlogs()" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-history fa-fw"></i> History Log</button>
                     <button onclick="historyQuestions()" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-history fa-fw"></i> Question Log</button>
-            </div>
+                </div>
             </div>
             </div>
             </div>
         </div>
-          <div class="w3-main"> 
-       <div class="w3-twothird">
-       <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <div class="w3-main"> 
+            <div class="w3-twothird">
+            <div class="w3-container w3-card w3-white w3-margin-bottom">
             <div class="w3-container w3-padding">
             <h2 class="w3-text-grey w3-padding-16">INSIGHT</h2>
             <hr>
@@ -67,17 +66,16 @@ function showCustomer() {
                         </tr>-->
                 </tbody>
             </table>
-            
-    <div id="example" >
+        <div id="example">
         <div class="demo-section k-content wide" class="w3-border w3-padding">
-            <div id="chart"class="w3-card w3-round w3-white"></div><br>
+        <div id="chart" class="w3-card w3-round w3-white"></div><br>
         
-     </div>
-   </div>
-    `;
-
-
-    }
+    </div>
+   </div>`;
+}
+console.log(user.showCustomer)
+}
+   
 
     function createChart() {
         $("#chart").kendoChart({
@@ -89,20 +87,10 @@ function showCustomer() {
             dataSource: {
                 data: [{
                     value: model.answers.week1[0].rating.toString(),
-                    
                     order: "uke 1"
                 }, {
                     value: model.answers.week1[1].rating.toString(),
                     order: "uke 2"
-                }, {
-                    value: model.answers.week2[0].rating.toString(),
-                    order: "uke 3"
-                }, {
-                    value: 15,
-                    order: "uke 4"
-                }, {
-                    value: 40,
-                    order: "uke 5"
                 }, ]
             }, //
            
@@ -125,7 +113,7 @@ function showCustomer() {
                 },
                 visible: true
             }
-        }); console.log  (model.answers.week1[0].rating.toString());
+        }); 
     }
 
     $(document).ready(createChart);
@@ -147,4 +135,5 @@ function showCustomer() {
 
         chart.refresh();
     }
+
 }

@@ -35,7 +35,7 @@ function showRegister() {
     <label>Female</label>
     <br>
     <label>Contact No</label>
-    <input id="contact" name="contact" placeholder="Contact No." type="text">
+    <input id="contactno" name="contact" placeholder="Contact No." type="text">
     <br>
     <br>
     <button type="submit" id="submitRegister" onclick="submitButton()" class="w3-button w3-border w3-teal w3-round-large">Submit</button>

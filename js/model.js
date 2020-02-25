@@ -7,8 +7,9 @@ const model = {
         'Module 2',
         'Module 3',
     ],
-    registeredUsers: [
-        {   id: 0,
+    registeredUsers: [{   
+            id: 0,
+            showCustomer: false,
             firstname: ['Andreas'],
             lastname: ['Rigoll'],
             username: ['123'],
@@ -21,7 +22,7 @@ const model = {
             conversationLog: [
                 {
                     date: '13.01.2020',
-                    text: `hallo`,
+                    text: `potetene smakte godt med krem og mel`,
                 },
                 {
                     date: '08.02.2020',
@@ -32,16 +33,28 @@ const model = {
         },
         {
             id: 1,
-            firstname: ['Blu'],
-            lastname: ['geir'],
-            username: ['geirdronning'],
-            password: [''],
-            company: [''],
-            email: [''],
-            genders: "female" || "male",
-            contactno: [''],
+            showCustomer: false,
+            firstname: ['Blue'],
+            lastname: ['berry'],
+            username: ['123'],
+            password: ['123'],
+            company: ['Blåbær'],
+            birthday: ['13 april 1911'],
+            email: ['Jordbærland@blåblærlia.com'],
+            genders: ['female'],
+            contactno: ['0046 732529604'],
+            conversationLog: [
+                {
+                    date: '13.01.2020',
+                    text: `jeg spiste jordbær`,
+                },
+                {
+                    date: '08.02.2020',
+                    text: `jeg spiste blåbær`,
+                }
+            ],
+            module: "Module 1" 
         },
-
       
     ],
     session: {
@@ -56,6 +69,7 @@ const model = {
                 { name: 'c', description: ' ', isDone: false },
                 { name: 'd', description: ' ', isDone: false },
             ]
+
     },
     answers: {
         week1: [
@@ -63,8 +77,12 @@ const model = {
             { rating: 5, comment: '' },
         ],
         week2: [
-            { rating: '', comment: '' },
+            { rating: '3', comment: '' },
         ],
+       
+       
+            
+        
     },
     newDocument: {
         newQuestion: [''],

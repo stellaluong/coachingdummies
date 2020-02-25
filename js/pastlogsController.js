@@ -32,8 +32,3 @@ function pastlogs() {
     showCustomer();
 
 }
-function pastlogs(logs){
-    const logs = getById(model.registeredUsers.conversationLog, logs);
-
-    showCustomer();
-}

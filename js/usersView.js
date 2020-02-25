@@ -17,7 +17,7 @@ function showUserTable() {
         <tbody>
             ${model.registeredUsers.map((user,index)=>`
             <tr>
-              <td><a href="javascript:showProfile()" id="member">${user.firstname} ${user.lastname}</td>
+              <td><a href="javascript:showProfile(${user.id})" id="member">${user.firstname} ${user.lastname}</td>
               <td>${user.company}</td>
               <td>
                 ${user.module}

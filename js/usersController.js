@@ -1,17 +1,21 @@
-function showProfile() {
-showCustomer();
+function showProfile(x) {
+  console.log(x) 
+  for( user of model.registeredUsers){
+    if(user.id == x){
+      user.showCustomer = true;
+
+    }
   }
+showCustomer(x);
+}
 
 function edit(userId, selectedModule){
   const user = getById(model.registeredUsers, userId);
   user.module = selectedModule;
-    // console.log(selectedModule.value);|
-    // model.registeredUsers[0].module = selectedModule.value;
     showUserTable();
 }
 
 function deleteButon(indexOfUser) {
-// console.log(selectedUserId.id)
 model.registeredUsers.splice(indexOfUser, 1);
 showUserTable();
 }

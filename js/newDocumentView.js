@@ -35,12 +35,13 @@ function addQuestion() {
 } 
 function sendDocument() {
 let questionObj = [];
-for(i = 0; i < idNumber; i++){
+for(i = 1; i < idNumber; i++){
   let singleQ =  document.getElementById("question"+i).value;
   questionObj.push(singleQ);
-}
-model.newDocument.newQuestion.push(questionObj);
-console.log(questionObj);
+} model.question.questions = []
+
+model.question.questions.push(...questionObj);
+console.log(questionObj,"send dok");
 
 }
 

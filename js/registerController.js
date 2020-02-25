@@ -10,7 +10,7 @@ let email = document.getElementById('email').value;
 let birthday = document.getElementById('birthday').value;
 let male = document.getElementById('male').value;
 let female = document.getElementById('female').value;
-let contact = document.getElementById('contact').value;
+let contactno = document.getElementById('contactno').value;
 
 let id = 0;
 for(let i =0; i < model.registeredUsers.length; i++){
@@ -19,16 +19,16 @@ for(let i =0; i < model.registeredUsers.length; i++){
 }
 model.registeredUsers.push({
     id: id,
-    firsName: firstname,
-    lastName: lastname,
-    userName: username,
+    firstname: firstname,
+    lastname: lastname,
+    username: username,
     password: password,
     company: company,
     email: email,
     birthday: birthday,
     genderMale: male,
     genderFemale: female,
-    contact: contact,
+    contactno: contactno,
 });
 showRegister();
 }
