@@ -1,9 +1,9 @@
 function showProfile(x) {
   console.log(x) 
-  for( user of model.registeredUsers){
+  model.session.currentUserID = x;
+  for (user of model.registeredUsers){
     if(user.id == x){
       user.showCustomer = true;
-
     }
   }
 showCustomer(x);

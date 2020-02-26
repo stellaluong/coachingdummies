@@ -1,14 +1,18 @@
 let questionLog = '';
-
+let qText;
 function historyQuestions() {
-    const answers = getCurrentAnswers();
-   console.log(answers, "hei! her er answer§!");
-    for (answer of answers) {
+    let currentUser = model.session.currentUserID;
      
-        questionLog += answers;
-    }
-    console.log(questionLog);
+        // console.log(pastAnswersLog, 'hehehe')
+        for (let i =0; i<model.registeredUsers[currentUser].answerLog.week1.length; i++){
+            console.log("test" ,  model.registeredUsers[currentUser].answerLog.week1[i])
+            
+        }
+function updateQText(qHistory) {
+qText = qHistory;
+}
 
+    
     showCustomer();
 }
 

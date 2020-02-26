@@ -42,7 +42,7 @@ function showCustomer(x) {
                  <a href="javascript:void(0)" onclick="format('insertunorderedlist')"><span class="fa fa-list fa-fw"></span></a>
                 </div>
                     <div oninput="updateLogText(this.innerHTML)" class="editor2" id="sampleeditor" contenteditable="true"></div>
-                    <button type="button" onclick="newConversationLog()" class="w3-button w3-theme"><i class="fas fa-edit"></i>  Post</button>
+                    <button type="button" onclick="postLogButton()" class="w3-button w3-theme"><i class="fas fa-edit"></i>  Post</button>
                     <thead>
                     <hr>
                     <h2 class="w3-text-grey w3-padding-16">Customer Journey</h2>

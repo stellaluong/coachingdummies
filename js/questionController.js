@@ -7,7 +7,7 @@ function next() {
     let commentText = document.getElementById("comment").value;
     let week = getCurrentWeekNo();
     const answers = getCurrentAnswers();
-    answers.push({week, rating: model.question.moodRating, commentText});
+   answers.push({week, rating: model.question.moodRating, commentText});
     console.log(answers.length, model.question.questions.length)
     if(model.question.questions.length > answers.length)
         showQuestion();

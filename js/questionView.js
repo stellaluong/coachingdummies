@@ -2,10 +2,10 @@ var questionDiv = document.getElementById('content');
 var commentInput = document.getElementById('commentBox');
 
 function showQuestion() {
+	console.log(model.session.currentUserID)
 	const currentAnswers = getCurrentAnswers();
 	const currentQuestionIndex = !currentAnswers ? 0 : currentAnswers.length;
 	const currentQuestion = model.question.questions[currentQuestionIndex];
-	console.log(model.question.questions);
 	const lastQuestion = model.question.questions.length <= currentQuestionIndex + 1;
 	const disabledOrNot = model.question.moodRating === 0 ? 'disabled' : lastQuestion ? 'disabled' :  '';
 	if (model.screen.current = 'questionScreen') {

@@ -12,8 +12,8 @@ const model = {
             showCustomer: false,
             firstname: ['Andreas'],
             lastname: ['Rigoll'],
-            username: ['123'],
-            password: ['123'],
+            username: ['admin'],
+            password: ['admin'],
             company: ['Celsa Nordic'],
             birthday: ['11 april 1988'],
             email: ['Andreas.rigoll@celsanordic.com'],
@@ -21,6 +21,7 @@ const model = {
             contactno: ['0046 732529604'],
             conversationLog: [
                 {
+                    
                     date: '13.01.2020',
                     text: `potetene smakte godt med krem og mel`,
                 },
@@ -36,13 +37,21 @@ const model = {
             showCustomer: false,
             firstname: ['Blue'],
             lastname: ['berry'],
-            username: ['123'],
-            password: ['123'],
+            username: ['user'],
+            password: ['user'],
             company: ['Blåbær'],
             birthday: ['13 april 1911'],
             email: ['Jordbærland@blåblærlia.com'],
             genders: ['female'],
             contactno: ['0046 732529604'],
+            answerLog: { 
+                week1: [
+                { rating: 5, comment: 'Good!' },
+                { rating: 5, comment: '' },
+            ],  
+                week2: [
+                { rating: 3, comment: '' }, ]
+            },
             conversationLog: [
                 {
                     date: '13.01.2020',
@@ -61,6 +70,7 @@ const model = {
         user: null,
         loginError: null,
         // screen: 'main'
+        currentUserID: null,
     },
     admin: {
         tasks: [
@@ -70,19 +80,6 @@ const model = {
                 { name: 'd', description: ' ', isDone: false },
             ]
 
-    },
-    answers: {
-        week1: [
-            { rating: 5, comment: 'Good!' },
-            { rating: 5, comment: '' },
-        ],
-        week2: [
-            { rating: '3', comment: '' },
-        ],
-       
-       
-            
-        
     },
     newDocument: {
         newQuestion: [''],
