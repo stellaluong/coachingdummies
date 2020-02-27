@@ -1,12 +1,11 @@
 function showProfile(x) {
-  console.log(x) 
   model.session.currentUserID = x;
   for (user of model.registeredUsers){
     if(user.id == x){
       user.showCustomer = true;
     }
   }
-showCustomer(x);
+showCustomer();
 }
 
 function edit(userId, selectedModule){

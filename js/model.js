@@ -19,6 +19,14 @@ const model = {
             email: ['Andreas.rigoll@celsanordic.com'],
             genders: ['male'],
             contactno: ['0046 732529604'],
+            answerLog: { 
+                week1: [
+                { rating: '', commentText: '' },
+                { rating: '', commentText: '' },
+            ],  
+                week2: [
+                { rating: '', commentText: '' }, ]
+            },
             conversationLog: [
                 {
                     
@@ -46,11 +54,11 @@ const model = {
             contactno: ['0046 732529604'],
             answerLog: { 
                 week1: [
-                { rating: 5, comment: 'Good!' },
-                { rating: 5, comment: '' },
+                { rating: 5, commentText: 'Good!' },
+                { rating: 5, commentText: 'asdasd' },
             ],  
                 week2: [
-                { rating: 3, comment: '' }, ]
+                { rating: 3, commentText: 'fsfd' }, ]
             },
             conversationLog: [
                 {

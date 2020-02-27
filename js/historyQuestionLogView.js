@@ -1,6 +1,6 @@
-function pastquestionlogs() {
+function showPastquestionlogs() {
   const currentUser = model.session.currentUserID;
-    let modelUserPath = model.registeredUsers[currentUser];
+  let modelUserPath = model.registeredUsers[currentUser];
     document.getElementById('content').innerHTML = ` 
     <div class="w3-main"> 
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
@@ -34,7 +34,7 @@ function pastquestionlogs() {
      <div class="w3-container w3-padding">
      <h2 class="w3-text-grey w3-padding-16">QUESTION LOGS</h2>
      <hr>
-     <div id="content">${historyQuestions}</div>
+     <div id="content">${questionLog}</div>
        </div>
 </div>
 </div>

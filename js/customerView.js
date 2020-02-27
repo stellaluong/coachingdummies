@@ -84,15 +84,15 @@ console.log(user.showCustomer)
                 visible: false
             },
             
-            dataSource: {
-                data: [{
-                    value: model.answers.week1[0].rating.toString(),
-                    order: "uke 1"
-                }, {
-                    value: model.answers.week1[1].rating.toString(),
-                    order: "uke 2"
-                }, ]
-            }, //
+            // dataSource: {
+            //     data: [{
+            //         value: model.registeredUsers.answers.toString(),
+            //         order: "uke 1"
+            //     }, {
+            //         value: model.answers.week1[1].rating.toString(),
+            //         order: "uke 2"
+            //     }, ]
+            // }, //
            
             series: [{
                 type: "area",

@@ -35,7 +35,7 @@ function addQuestion() {
 } 
 function sendDocument() {
 let questionObj = [];
-for(i = 1; i < idNumber; i++){
+for(i = 1; i <= idNumber; i++){
   let singleQ =  document.getElementById("question"+i).value;
   questionObj.push(singleQ);
 } model.question.questions = []

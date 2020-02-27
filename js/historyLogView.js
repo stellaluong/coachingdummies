@@ -24,7 +24,7 @@ function pastlogs() {
              <div class="w3-white w3-text-grey w3-card-4">
               <div class="w3-display-container">
             <button onclick="pastlogs()" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>History Log</button>
-            <button onclick="historyQuestions()" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-history fa-fw"></i> Question Log</button>
+            <button onclick="pastquestionlogs()" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-history fa-fw"></i> Question Log</button>
     </div>
     </div>
     </div>

@@ -44,7 +44,9 @@ function showQuestion() {
 				<h1> You have submitted your form, Thank You!</h1>
 				`; 
 				console.log()
+				submit();
 			}
+
 			
 		
 	
