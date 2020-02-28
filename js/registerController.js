@@ -7,9 +7,6 @@ let username = document.getElementById('uname').value;
 let password = document.getElementById('password').value;
 let company = document.getElementById('company').value;
 let email = document.getElementById('email').value;
-let birthday = document.getElementById('birthday').value;
-let male = document.getElementById('male').value;
-let female = document.getElementById('female').value;
 let contactno = document.getElementById('contactno').value;
 
 let id = 0;
@@ -25,10 +22,10 @@ model.registeredUsers.push({
     password: password,
     company: company,
     email: email,
-    birthday: birthday,
-    genderMale: male,
-    genderFemale: female,
     contactno: contactno,
+    answerLog: {},
+    module: "Module 1",
 });
-showRegister();
+registerForm.innerHTML = 'You have registrated, You can login now.'
+setTimeout(function() {showLogin()}, 3000); 
 }

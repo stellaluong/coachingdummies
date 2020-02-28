@@ -7,6 +7,7 @@ function getCurrentWeekNo() {
 function getCurrentAnswers() {
     const currentWeekNo = getCurrentWeekNo();
     const weekLabel = 'week' + currentWeekNo;
+    console.log(model.session.currentUserID)
     let answers = model.registeredUsers[model.session.currentUserID].answerLog[weekLabel];
     if (!answers) {
         answers = model.registeredUsers[model.session.currentUserID].answerLog[weekLabel] = [];

@@ -1,5 +1,5 @@
 let logText;
-let historyLog = '';
+let convolog = '';
 function getLatestConversationLog() {
     const currentUser = model.session.currentUserID;
     const logs = model.registeredUsers[currentUser].conversationLog;
@@ -13,9 +13,16 @@ function updateLogText(txt) {
     
 }
 
+function pastlogs() {
+    convolog = '';
+    const currentUser = model.session.currentUserID;
+    for (l of model.registeredUsers[currentUser].conversationLog) {
+    convolog += `<h4><span class="w3-tag w3-teal w3-round">${l.date}</span></h4> ${l.text}<hr>` }
+    showConversationLog();
+        } 
+
 function postLogButton(){
     const currentUser = model.session.currentUserID;
-    console.log("newConvLog: ", currentUser, " current user <-   -> model stien: " , model.registeredUsers );
     for(user of model.registeredUsers){
         if(user.id == currentUser){
             model.registeredUsers[currentUser].conversationLog.push({

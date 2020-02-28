@@ -15,9 +15,7 @@ const model = {
             username: ['admin'],
             password: ['admin'],
             company: ['Celsa Nordic'],
-            birthday: ['11 april 1988'],
             email: ['Andreas.rigoll@celsanordic.com'],
-            genders: ['male'],
             contactno: ['0046 732529604'],
             answerLog: { 
                 week1: [
@@ -29,7 +27,6 @@ const model = {
             },
             conversationLog: [
                 {
-                    
                     date: '13.01.2020',
                     text: `potetene smakte godt med krem og mel`,
                 },
@@ -48,9 +45,7 @@ const model = {
             username: ['user'],
             password: ['user'],
             company: ['Blåbær'],
-            birthday: ['13 april 1911'],
             email: ['Jordbærland@blåblærlia.com'],
-            genders: ['female'],
             contactno: ['0046 732529604'],
             answerLog: { 
                 week1: [
@@ -70,7 +65,37 @@ const model = {
                     text: `jeg spiste blåbær`,
                 }
             ],
-            module: "Module 1" 
+            module: "Module 2" 
+        },
+        {
+            id: 3,
+            showCustomer: false,
+            firstname: ['Strawyberry'],
+            lastname: ['Juice'],
+            username: ['straw'],
+            password: ['berry'],
+            company: ['FruitLand'],
+            email: ['Jordbærland@blåblærlia.com'],
+            contactno: ['0046 732529604'],
+            answerLog: { 
+                week1: [
+                { rating: 5, commentText: 'Good!' },
+                { rating: 5, commentText: 'asdasd' },
+            ],  
+                week2: [
+                { rating: 3, commentText: 'fsfd' }, ]
+            },
+            conversationLog: [
+                {
+                    date: '13.01.2020',
+                    text: `jeg spiste jordbær, meg selv`,
+                },
+                {
+                    date: '08.02.2020',
+                    text: `jeg spiste blåbær`,
+                }
+            ],
+            module: "Module 3" 
         },
       
     ],
@@ -79,14 +104,7 @@ const model = {
         loginError: null,
         // screen: 'main'
         currentUserID: null,
-    },
-    admin: {
-        tasks: [
-                { name: "a", description: ' ', isDone: true, dato: '2020-01-31' },
-                { name: 'b', comment: "", description: ' ', isDone: true },
-                { name: 'c', description: ' ', isDone: false },
-                { name: 'd', description: ' ', isDone: false },
-            ]
+        isAdmin: 'none',
 
     },
     newDocument: {

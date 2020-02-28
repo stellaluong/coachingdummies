@@ -55,7 +55,7 @@ function showUsers() {
     <div class="w3-card w3-container" style="min-height:460px">
     <h3>Module 2</h3><br>
     <i class="fas fa-building w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-    <a href="javascript:void(0)" onclick="showUserTable(event, 'moduleNum');" id="myLink">
+    <a href="javascript:void(0)" onclick="showModule2(event, 'moduleNum');" id="myLink">
     <div class=" tablink w3-padding-large w3-hover-blue">Module 2</div>
     </div>
   </div>
@@ -64,7 +64,7 @@ function showUsers() {
     <div class="w3-card w3-container" style="min-height:460px">
     <h3>Module 3</h3><br>
     <i class="fab fa-fort-awesome w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-    <a href="javascript:void(0)" onclick="showUserTable(event, 'moduleNum');" id="myLink">
+    <a href="javascript:void(0)" onclick="showModule3(event, 'moduleNum');" id="myLink">
     <div class=" tablink w3-padding-large w3-hover-red">Module 3</div>
     </div>
   </div>
@@ -77,4 +77,5 @@ function showUsers() {
   </div>
   </div>
   `
+  
 }

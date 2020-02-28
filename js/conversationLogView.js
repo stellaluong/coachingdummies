@@ -1,8 +1,9 @@
-function showPastquestionlogs() {
+function showConversationLog() {
   const currentUser = model.session.currentUserID;
   let modelUserPath = model.registeredUsers[currentUser];
+
     document.getElementById('content').innerHTML = ` 
-  <div class="w3-main"> 
+    <div class="w3-main"> 
         <div class="w3-row-padding">
           <div class="w3-third">
               <div class="w3-white w3-text-grey w3-card-4">
@@ -26,10 +27,11 @@ function showPastquestionlogs() {
          <div class="w3-content marginbody" style="max-width:1150px;">
          <div class="w3-twothird">
          <div class="w3-container w3-card w3-white w3-margin-bottom">
-         <h2 class="w3-text-grey w3-padding-16">QUESTION LOGS</h2>
-                ${questionLog}
-            </div>
-       </div>
-  </div>
+     <h2 class="w3-text-grey w3-padding-16">CONVERSATION LOGS</h2>
+     <hr>
+     ${convolog}
+</div>
+</div>
+</div>
 `;
 }

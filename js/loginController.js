@@ -20,9 +20,10 @@ for(user of model.registeredUsers){
         //window.location.href = "AdminKontrollPanel\adminoversiktView.js"
         model.session.user = {
             name: 'admin',
-            isAdmin: true
+          
         };
         model.session.loginError = null;
+        model.session.isAdmin = "block";
         for(users of model.registeredUsers){
             if(user.username == model.session.user.name){
                 model.session.currentUserID = user.id;
@@ -30,17 +31,18 @@ for(user of model.registeredUsers){
 
         }
         showDashboard();
-        console.log("du er admin!")
+        showMenu();
+        console.log("showmenu", document.getElementById('header').innerHTML )
     } else {
         model.session.user = {
             name: username.value,
             isAdmin: false
         };
-                        for(users of model.registeredUsers){
-                            if(user.username == model.session.user.name){
-                                model.session.currentUserID = user.id;
-                            }
-                        }
+console.log(user.username)
+    for(users of model.registeredUsers){
+            if(users.username == model.session.user.name){
+                 model.session.currentUserID = users.id;}
+    }
         console.log(model.session.currentUserID)
         showQuestion();
         console.log("du er ikke admin din dust")

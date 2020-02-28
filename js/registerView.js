@@ -25,15 +25,6 @@ function showRegister() {
     <label>Email :</label>
     <input id="email" name="email" placeholder="Valid Email" type="text">
     <br>
-    <label>Birthday :</label>
-    <input id="birthday" type="date" name="bday">
-    <br>
-    <label>Gender :</label>
-    <input id="male" name="gender" type="radio" value="Male">
-    <label>Male</label>
-    <input id="female" name="gender" type="radio" value="Female">
-    <label>Female</label>
-    <br>
     <label>Contact No</label>
     <input id="contactno" name="contact" placeholder="Contact No." type="text">
     <br>
@@ -44,7 +35,7 @@ function showRegister() {
     </div>
     
     ` ;
-    }
-    else {commentInput = ''}
-    console.log(model.screen.current)
+    
+}
+
     }

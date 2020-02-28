@@ -45,7 +45,9 @@ function showQuestion() {
 				`; 
 				console.log()
 				submit();
+				setTimeout(function() {showLogin()}, 3000); 
 			}
+
 
 			
 		
