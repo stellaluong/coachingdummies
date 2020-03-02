@@ -78,15 +78,21 @@ console.log(user.showCustomer)
                 visible: false
             },
             
-            // dataSource: {
-            //     data: [{
-            //         value: model.registeredUsers.answers.toString(),
-            //         order: "uke 1"
-            //     }, {
-            //         value: model.answers.week1[1].rating.toString(),
-            //         order: "uke 2"
-            //     }, ]
-            // }, //
+           dataSource: {
+                 data: [{
+                    value: model.registeredUsers[0].answerLog.week1.toString(),
+                    order: "uke 1"
+                 }, {
+                  value: model.registeredUsers[1].answerLog.week1.toString(),
+                    order: "uke 2"
+                }, { value: model.registeredUsers[2].answerLog.week1.toString(),
+                    order: "uke 3"
+
+                    
+            
+             }
+                ]
+             }, 
            
             series: [{
                 type: "area",
