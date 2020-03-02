@@ -3,7 +3,6 @@ function getCurrentWeekNo() {
     let onejan = new Date(now.getFullYear(), 0, 1);
     return Math.ceil((((now - onejan) / 86400000) + onejan.getDay() + 1) / 7);
 }
-
 function getCurrentAnswers() {
     const currentWeekNo = getCurrentWeekNo();
     const weekLabel = 'week' + currentWeekNo;

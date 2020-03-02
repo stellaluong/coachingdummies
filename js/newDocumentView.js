@@ -27,11 +27,11 @@ function selectModule(selectedModule) {
 
 function addQuestion() {
     idNumber++;
-    document.getElementById('content').innerHTML += `
+    document.getElementById('content').innerHTML += `<br><br>
     <div class="w3-main">
 <div class="col-md-3"></div>
 <div class="col-md-6 well">
-<input id="question${idNumber}" type="text"></input>`;
+<input id="question${idNumber}" class="form-control" type="text"></input><br>`;
 } 
 function sendDocument() {
 let questionObj = [];

@@ -5,7 +5,7 @@ function showUserTable() {
     <div class="w3-twothird">
     <div class="w3-responsive w3-card-4">
     <table class="w3-table w3-striped w3-bordered">
-      <table id="memberList">
+      <table id="module1Table">
         <thead>
           <tr class="w3-theme">
             <th>Members</th>
@@ -46,7 +46,7 @@ function showModule2() {
   <div class="w3-twothird">
   <div class="w3-responsive w3-card-4">
   <table class="w3-table w3-striped w3-bordered">
-    <table id="memberList">
+    <table id="module2Table">
       <thead>
         <tr class="w3-theme">
           <th>Members</th>
@@ -71,7 +71,7 @@ function showModule2() {
               </select>
             </td>
             <td>
-              <input type="button" value="Delete" class="delete" onclick="deleteButon(${index})">
+              <input type="button" value="Delete" class="delete" onclick="deleteButton2(${index})">
             </td>
           </tr>
           `: '').join('')
@@ -89,7 +89,7 @@ function showModule3() {
   <div class="w3-twothird">
   <div class="w3-responsive w3-card-4">
   <table class="w3-table w3-striped w3-bordered">
-    <table id="memberList">
+    <table id="module3Table">
       <thead>
         <tr class="w3-theme">
           <th>Members</th>
@@ -113,7 +113,47 @@ function showModule3() {
               </select>
             </td>
             <td>
-              <input type="button" value="Delete" class="delete" onclick="deleteButon(${index})">
+              <input type="button" value="Delete" class="delete" onclick="deleteButton3(${index})">
+            </td>
+          </tr>
+          `: '').join('')}
+  </tbody>
+  </table>
+  </div>
+
+`;
+}
+
+function showAllUsers() {
+  document.getElementById('content').innerHTML = `
+  <div class="w3-main"> 
+  <div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <div class="w3-twothird">
+  <div class="w3-responsive w3-card-4">
+  <table class="w3-table w3-striped w3-bordered">
+    <table id="showAllUsersTable">
+      <thead>
+        <tr class="w3-theme">
+          <th>Members</th>
+          <th>Company</th>
+          <th>Module</th>
+        </tr>
+      </thead>
+      <tbody>
+          ${model.registeredUsers.map((user,index)=> (user.module != "") ?`
+          <tr>
+            <td><a href="javascript:showProfile(${user.id})" id="member">${user.firstname} ${user.lastname}</td>
+            <td>${user.company}</td>
+            <td>
+              ${user.module}
+              <select class="theme-pink selected" size="1" oninput="edit(${user.id}, this.value)">
+                <option value="module1"></option>
+                ${model.modules.map(m=>`
+                <option value="${m}" ${user.module==m?'selected':''} >${m}</option>
+                `).join('')}
+              </select>
+            </td>
+            <td>
             </td>
           </tr>
           `: '').join('')}

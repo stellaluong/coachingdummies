@@ -32,7 +32,6 @@ for(user of model.registeredUsers){
         }
         showDashboard();
         showMenu();
-        console.log("showmenu", document.getElementById('header').innerHTML )
     } else {
         model.session.user = {
             name: username.value,
@@ -45,9 +44,7 @@ console.log(user.username)
     }
         console.log(model.session.currentUserID)
         showQuestion();
-        console.log("du er ikke admin din dust")
     }
-console.log(model.session);
 }
 
 let output = document.getElementById('')

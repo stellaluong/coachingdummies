@@ -16,7 +16,8 @@ function showMenu() {
     </div>
 <div class="w3-bar-block">
       <a href="javascript:showDashboard()" class="w3-bar-item w3-button w3-padding"><i class="far fa-user"></i> DASHBOARD</a>
-      <a href="javascript:showUserTable()" class="w3-bar-item w3-button w3-padding"><i class="far fa-address-card"></i> USERS</a>
+      <a href="javascript:showUsers()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-list-ol"></i> MODULES</a>
+      <a href="javascript:showAllUsers()" class="w3-bar-item w3-button w3-padding"><i class="far fa-address-card"></i> USERS</a>
       <a href="javascript:showNewDocument()" class="w3-bar-item w3-button w3-padding"><i class="far fa-address-book"></i> New Document</a>
 
     </div>
