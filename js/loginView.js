@@ -6,18 +6,15 @@ function showLogin() {
         <h3>Login</h3>
     <div class="w3-container w3-white  w3-round-medium" id="container">
     <label for="uname"><b>Username</b></label>
-    <input id="uname" placeholder="Enter Username" name="uname" required>
+    <input id="uname" style="width: 200px"placeholder="Enter Username" name="uname" required>
     <br>
     <label for="psw"><b>Password</b></label>
     <input id="pass" type="password" placeholder="Enter Password" name="psw" required><br>
     <br>
-    <button type="submit" onclick="checklogin()" class="w3-button w3-border w3-teal w3-round-large">Login</button>
-    <button type="submit" onclick="showRegister()" class="w3-button w3-border w3-teal w3-round-large">Register</button>
-    <label> 
+    <button type="submit" onclick="checklogin()" style="float:right" class="w3-button w3-border w3-teal w3-round w3-small">Login</button>
+    <button type="submit" onclick="showRegister()" style="float:right" class="w3-button w3-border w3-teal w3-round w3-small">Register</button>
     <br>
-    <input type="checkbox" checked="checked " name="remember"> Remember me
-    </label><br>
-    <span class="psw">Forgot <a href="#">password?</a></span>
+    <br>
     <div style="color: red">
         ${model.session.loginError || ''}
     </div>
